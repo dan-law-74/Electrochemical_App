@@ -1,0 +1,33 @@
+# --- Python garbage ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Environments (The big one!) ---
+# Don't upload your whole virtual environment (it can be gigabytes)
+.venv/
+venv/
+env/
+
+# --- Streamlit Specific ---
+# Especially if you use the secrets.toml for API keys or passwords
+.streamlit/secrets.toml
+# Optional: exclude config if you want others to use their own settings
+# .streamlit/config.toml
+
+# --- Operating System junk ---
+.DS_Store
+Thumbs.db
+
+# --- Data Files (CRITICAL for Battery Research) ---
+# If your raw battery .csv files are huge, don't upload them to GitHub.
+# GitHub has a 100MB limit per file and will complain.
+# You can ignore all CSVs, or just large ones.
+*.csv
+*.xlsx
+*.parquet
+
+# --- IDE Settings ---
+.vscode/
+.idea/
